@@ -55,6 +55,17 @@ body{
     transform: scale(1.2);
 }
 
+.hamburguesa{
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: none;
+}
+
+.hamburguesa img{
+    vertical-align: top;
+}
+
 /* index.html */
 
 .container {
@@ -281,6 +292,21 @@ h2{
 
 .contacto{
     color: #ff0000;
+    transition: transform .1s ease;
+}
+
+.contacto:hover{
+    transform: scale(1.1);
+}
+
+.contacto a{
+    text-decoration: none;
+    color: #fff;
+    transition: color .3s ease;
+}
+
+.contacto a:hover{
+    color: rgba(0,50,255);
 }
 
 button{
@@ -303,4 +329,30 @@ button{
 
 select{
     padding: 5px;
+}
+
+/* fin */
+
+@media screen and (max-width: 800px) {
+    .hamburguesa{
+        display: block;
+    }
+
+    .nav--list{
+        position: fixed;
+        background-color: #000;
+        left: 0;
+        top: 60px;
+        width: 70%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+
+    .enlaces2{
+        transform: translateX(0%);
+    }
 }
