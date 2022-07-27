@@ -23,6 +23,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	height: calc(100vh - 80px);
+	z-index: 100;
 }
 
 .hero h1 {
@@ -43,6 +44,7 @@ nav {
 	position: sticky;
 	top: 0;
 	overflow: hidden;
+	z-index: 100;
 }
 
 nav a {
@@ -110,6 +112,7 @@ nav .indicador {
 	width: 100%;
 	vertical-align: top;
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 .footer{
@@ -205,7 +208,25 @@ select{
 	transform: scale(1.1);
 }
 
+.copy{
+    text-align: center;
+}
 
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icons img{
+    width: 50px;
+    transition: transform .3s ease;
+}
+
+.icons img:hover{
+    transform: scale(1.1);
+}
 
 
 

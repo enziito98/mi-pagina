@@ -8,12 +8,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="estilos.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<title>Blog</title>
 </head>
 <body>
 	<div class="hero" id="hero">
-		<h1>Enzo Sosa</h1>
-		<p>HTML • CSS • Javascript</p>
+		<h1>Blog</h1><br>
+		<a href="../index.html" class="pagina">Ir a Pagina Principal</a>
 	</div>
 
 	<nav id="menu">
@@ -24,87 +25,117 @@
 		<a href="#5">Sección 5</a>
 		<span class="indicador" id="indicador"></span>
 	</nav>
-
+	
 	<div class="secciones">
 		<div class="seccion" id="1">
 			<div class="card">
-				<h1>Sección 1</h1>
-				<img src="img/1.jpg" alt="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante mattis, lacinia arcu nec, consequat massa. Aliquam faucibus quam eget justo posuere vehicula. Donec ac fermentum dolor, rhoncus congue sapien. Maecenas lacinia tellus nec turpis tempor pellentesque. Praesent in erat a nisl viverra dapibus. Pellentesque feugiat dolor quis sapien rutrum, sed placerat est volutpat. Curabitur sed convallis lacus, vel molestie ante. </p>
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="img/1.jpg" class="d-block w-100" alt="paisajes">
+					  </div>
+					  <div class="carousel-item">
+						<img src="img/2.jpg" class="d-block w-100" alt="paisajes">
+					  </div>
+					  <div class="carousel-item">
+						<img src="img/3.jpg" class="d-block w-100" alt="paisajes">
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+					<h2>This is bootstrap</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste saepe itaque ratione qui, cumque, consequatur dolor optio natus sit excepturi voluptas incidunt provident voluptates in veniam, esse animi eligendi iure?</p>
+				  </div>
 			</div>
 		</div>
-
+		
 		<div class="seccion" id="2">
 			<div class="card">
 				<h1>Sección 2</h1>
-				<img src="img/2.jpg" alt="">
+				<img src="img/iphone2.jpg" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante mattis, lacinia arcu nec, consequat massa. Aliquam faucibus quam eget justo posuere vehicula. Donec ac fermentum dolor, rhoncus congue sapien. Maecenas lacinia tellus nec turpis tempor pellentesque. Praesent in erat a nisl viverra dapibus. Pellentesque feugiat dolor quis sapien rutrum, sed placerat est volutpat. Curabitur sed convallis lacus, vel molestie ante. </p>
 			</div>
 		</div>
-
+		
 		<div class="seccion" id="3">
 			<div class="card">
 				<h1>Sección 3</h1>
-				<img src="img/3.jpg" alt="">
+				<img src="img/iphone3.jpg" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante mattis, lacinia arcu nec, consequat massa. Aliquam faucibus quam eget justo posuere vehicula. Donec ac fermentum dolor, rhoncus congue sapien. Maecenas lacinia tellus nec turpis tempor pellentesque. Praesent in erat a nisl viverra dapibus. Pellentesque feugiat dolor quis sapien rutrum, sed placerat est volutpat. Curabitur sed convallis lacus, vel molestie ante. </p>
 			</div>
 		</div>
-
+		
 		<div class="seccion" id="4">
 			<div class="card">
 				<h1>Sección 4</h1>
-				<img src="img/4.jpg" alt="">
+				<img src="img/iphone4.jpg" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante mattis, lacinia arcu nec, consequat massa. Aliquam faucibus quam eget justo posuere vehicula. Donec ac fermentum dolor, rhoncus congue sapien. Maecenas lacinia tellus nec turpis tempor pellentesque. Praesent in erat a nisl viverra dapibus. Pellentesque feugiat dolor quis sapien rutrum, sed placerat est volutpat. Curabitur sed convallis lacus, vel molestie ante. </p>
 			</div>
 		</div>
-
+		
 		<div class="seccion" id="5">
 			<div class="card">
 				<h1>Sección 5</h1>
-				<img src="img/5.jpg" alt="">
+				<img src="img/iphone1.png" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet ante mattis, lacinia arcu nec, consequat massa. Aliquam faucibus quam eget justo posuere vehicula. Donec ac fermentum dolor, rhoncus congue sapien. Maecenas lacinia tellus nec turpis tempor pellentesque. Praesent in erat a nisl viverra dapibus. Pellentesque feugiat dolor quis sapien rutrum, sed placerat est volutpat. Curabitur sed convallis lacus, vel molestie ante. </p>
 			</div>
-		</div>
 	</div>
-
+	
 	<footer class="footer">
-
-        <div class="footer--container">
-            <form class="footer--form">
-                <fieldset>
-
-                    <legend>Regístrate</legend>
+		
+		<div class="footer--container">
+			<form class="footer--form">
+				<fieldset>
+					
+					<legend>Regístrate</legend>
                     <label for="" class="label">Nombre:</label><br>
                     <input type="text" class="input" placeholder="Nombre"><br><br>
-
+					
                     <label for="" class="label">Apellido:</label><br>
                     <input type="text" class="input" placeholder="Apellido"><br><br>
-
+					
                     <label for="" class="label">Usuario:</label><br>
                     <input type="text" class="input" placeholder="Usuario"><br><br>
-
+					
                     <label for="" class="label">Email:</label><br>
                     <input type="email" class="input" placeholder="Email"><br><br>
-
+					
                     <label for="" class="label">Contraseña:</label><br>
                     <input type="password" class="input" placeholder="Contraseña"><br><br>
                     
                     <label for="">Seleccione Pais:</label>
                     <select>
-                        <option disabled="disabled" selected="selected" value="pais">Pais</option>
+						<option disabled="disabled" selected="selected" value="pais">Pais</option>
                         <option value="arg">Argentina</option>
                         <option value="bra">Brasil</option>
                         <option value="uru">Uruguay</option>
                         <option value="otro">Otro</option>
                     </select>
-
+					
                     <button>Enviar</button>
-
+					
                 </fieldset>
             </form>
-
+			
+			<div class="icons">
+				<a href="https://www.facebook.com/enziitososa98"><img src="../imagenes/facebook-circle-logo-24.png" alt=""></a>
+				<a href="https://www.instagram.com/lenchii98/"><img src="../imagenes/instagram-alt-logo-24.png" alt=""></a>
+				<a href="https://github.com/enziito98"><img src="../imagenes/github-logo-24 (1).png" alt=""></a>
+			</div>
+			
             <div class="detalle">
-                <h2>MarCell</h2>
+				<h2>MarCell</h2>
 				<a href="../index.html" class="pagina">ir a Pagina Principal</a>
                 <p>Tecnico en reapracion de celulares</p>
                 <span>Compramos</span>
@@ -114,9 +145,14 @@
                 <a href="blog.html" class="comienzo">Ir al Comienzo</a>
             </div>
         </div> 
-
+		
+		<div class="copy">
+			<p>Copyrigth ©Marcell. Todos Los Derechos Reservados.</p>
+        </div>
+		
     </footer>
-
+	
 </body>
 <script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </html>

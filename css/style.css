@@ -108,6 +108,30 @@ body{
     margin-bottom: 50px;
 }
 
+.container__table{
+    width: 60% !important;
+}
+
+.table2{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.imgt{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.text{
+    color: #000;
+    font-size: large;
+}
+
+
 /* venta.html */
 
 .section {
@@ -187,6 +211,10 @@ aside{
     padding: 10px;
 }
 
+.contacto__aside a{
+    color: #000 !important; 
+}
+
 .contacto{
     color: #ff0000;
     font-size: large;
@@ -205,6 +233,10 @@ button{
 
 .text{
     resize: none;
+}
+
+.video{
+    margin: 10px;
 }
 
 /* horarios.html */
@@ -245,6 +277,24 @@ button{
 
 .tfoot--tr1, .tfoot--tr2{
     background-color: rgba(0,0,0,.8);
+}
+
+.boton__descarga{
+    text-align: center;
+    transition: transform .3s ease;
+}
+
+.descarga{
+    background-color: blue;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    
+}
+
+.boton__descarga:hover{
+    transform: scale(1.1);
 }
 
 /* footer */
@@ -329,6 +379,26 @@ button{
 
 select{
     padding: 5px;
+}
+
+.copy{
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icons img{
+    width: 50px;
+    transition: transform .3s ease;
+}
+
+.icons img:hover{
+    transform: scale(1.1);
 }
 
 /* fin */
