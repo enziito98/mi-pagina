@@ -80,6 +80,7 @@ body{
 .welcome img{
     width: 100%;
     clip-path: polygon(100% 0, 100% 70%, 50% 95%, 0 80%, 0 0);
+    box-shadow: 5px, 5px, 5px, 5px #000;
 }
 
 .div-title{
@@ -109,7 +110,7 @@ body{
 }
 
 .container__table{
-    width: 60% !important;
+    width: 60%;
 }
 
 .table2{
@@ -130,7 +131,6 @@ body{
     color: #000;
     font-size: large;
 }
-
 
 /* venta.html */
 
@@ -173,13 +173,6 @@ section article h2, section article p {
     display: flex;
     justify-content: space-between;
    margin: 100px 0;
-}
-
-.imagen{
-    width: 400px;
-    height: 100%;
-    margin: 0 10px;
-    border-radius: 6px;
 }
 
 .formulario{
@@ -387,7 +380,6 @@ select{
 
 .icons{
     display: flex;
-    flex-direction: column;
     gap: 20px;
     justify-content: center;
 }
@@ -399,6 +391,10 @@ select{
 
 .icons img:hover{
     transform: scale(1.1);
+}
+
+.whatsapp{
+    color: #00ff00;
 }
 
 /* fin */
@@ -424,5 +420,77 @@ select{
 
     .enlaces2{
         transform: translateX(0%);
+    }
+}
+
+@media (max-width: 800px){
+
+    .footer--container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .container__repar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vid{
+        width: 100%;
+    }
+
+    .hero{
+        width: 60%;
+    }
+
+    .table{
+        width: 100%;
+    }
+
+    .thead{
+        display: none;
+    }
+
+    .table tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table tr td{
+        border-bottom: #000 solid;
+    }
+
+    .table td[data-titulo]{
+        display: flex;
+    }
+
+    .table td[data-titulo]::before{
+        content: attr(data-titulo);
+        padding-right: 10px;
+        color: #0000ff;
+    }
+    
+    .tbody2{
+        display: none;
+    }
+
+    .table2 tr{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table2 tr img{
+        width: 95%;
     }
 }
