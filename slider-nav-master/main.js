@@ -42,3 +42,36 @@ const onResize = () => {
 }
 
 window.addEventListener('resize', onResize);
+
+//fin header slider
+
+const form = document.getElementById('form');
+const nombre = document.getElementById('name');
+const apellido = document.getElementById('apellido');
+const usuario = document.getElementById('usuario');
+const email = document.getElementById('email');
+const pass = document.getElementById('password');
+
+form.addEventListener('submit', e =>{
+    e.preventDefault()
+    let entrar = false;
+    if(nombre.value.length <= 2){
+        alert('El nombre no es valido');
+    }
+
+    if(apellido.value.length <= 2){
+        alert('El apellido no es valido');
+    }
+
+    if(usuario.value.length <= 6){
+        alert('El usuario no es valido');
+    }
+
+	if(email.value.length <=8){
+		alert('el email no es valido');
+	}
+
+    if(pass.value.length <= 8){
+        alert('La constraseña no es valida');
+    }
+});
