@@ -49,7 +49,6 @@ const pass = document.getElementById('password');
 
 form.addEventListener('submit', e =>{
     e.preventDefault()
-    let entrar = false;
     if(nombre.value.length <= 2){
         alert('El nombre no es valido');
     }
