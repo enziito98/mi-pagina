@@ -79,8 +79,7 @@ body{
 
 .welcome img{
     width: 100%;
-    clip-path: polygon(100% 0, 100% 70%, 50% 95%, 0 80%, 0 0);
-    box-shadow: 5px, 5px, 5px, 5px #000;
+    clip-path: polygon(100% 0, 100% 80%, 50% 95%, 0 80%, 0 0);
 }
 
 .div-title{
@@ -135,32 +134,30 @@ body{
 /* venta.html */
 
 .section {
-    width: 400px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-top: 85px;
 }
 
-section article {
+.post {
     transition: box-shadow 0.3s ease;
     background-color: #fff;
     margin: 1rem 0;
     border-radius: 0.5rem;
     padding: 5px 0;
     cursor: pointer;
+    transition: transform 0.3s;
 }
 
-section article:hover {
+.post:hover {
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
 }
 
-section article h2, section article p {
+.post h2, .post p {
     margin: 1rem;
     text-align: center;
     color: #000;
-}
-
-.post{
-    transition: transform 0.3s;
 }
 
 .post:hover{

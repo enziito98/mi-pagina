@@ -69,3 +69,41 @@ form.addEventListener('submit', e =>{
         alert('La constraseña no es valida');
     }
 });
+
+//fin form footer
+
+const form2 = document.getElementById('form2')
+const nombre2 = document.getElementById('nombre2');
+const apellido2 = document.getElementById('apellido2');
+const email2 = document.getElementById('email2');
+
+
+form2.addEventListener('submit', e =>{
+    e.preventDefault();
+
+    if(nombre2.value.length <= 2){
+        alert('el nombre del formulario no es valido');
+    }
+
+    if(apellido2.value.length <= 2){
+        alert('El apellido del formulario no es valido');
+    }
+
+    if(email2.value.length <=8){
+		alert('el email del formulario no es valido');
+	}
+
+    if(document.getElementById('samsung').checked){
+        alert('Marca seleccionada samsung');
+    }
+
+    if(document.getElementById('iphone').checked){
+        alert('Marca seleccionada iphone');
+    }
+
+    if(document.getElementById('otro').checked){
+        alert('Marca seleccionada otro');
+    }
+});
+
+
